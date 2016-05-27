@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -58,59 +58,58 @@
 <library>
 <packages>
 <package name="16TSSOP">
-<smd name="P$1" x="-2.275" y="-3.2" dx="0.3" dy="1.5" layer="1"/>
-<smd name="P$2" x="-1.625" y="-3.2" dx="0.3" dy="1.5" layer="1"/>
-<smd name="P$3" x="-0.975" y="-3.2" dx="0.3" dy="1.5" layer="1"/>
-<smd name="P$4" x="-0.325" y="-3.2" dx="0.3" dy="1.5" layer="1"/>
-<smd name="P$5" x="0.325" y="-3.2" dx="0.3" dy="1.5" layer="1"/>
-<smd name="P$6" x="0.975" y="-3.2" dx="0.3" dy="1.5" layer="1"/>
-<smd name="P$7" x="1.625" y="-3.2" dx="0.3" dy="1.5" layer="1"/>
-<smd name="P$8" x="2.275" y="-3.2" dx="0.3" dy="1.5" layer="1"/>
-<smd name="P$9" x="2.275" y="3.2" dx="0.3" dy="1.5" layer="1"/>
-<smd name="P$10" x="1.625" y="3.2" dx="0.3" dy="1.5" layer="1"/>
-<smd name="P$11" x="0.975" y="3.2" dx="0.3" dy="1.5" layer="1"/>
-<smd name="P$12" x="0.325" y="3.2" dx="0.3" dy="1.5" layer="1"/>
-<smd name="P$13" x="-0.325" y="3.2" dx="0.3" dy="1.5" layer="1"/>
-<smd name="P$14" x="-0.975" y="3.2" dx="0.3" dy="1.5" layer="1"/>
-<smd name="P$15" x="-1.625" y="3.2" dx="0.3" dy="1.5" layer="1"/>
-<smd name="P$16" x="-2.275" y="3.2" dx="0.3" dy="1.5" layer="1"/>
+<smd name="P$1" x="-2.275" y="-3" dx="0.3" dy="1" layer="1" rot="R180"/>
+<smd name="P$2" x="-1.625" y="-3" dx="0.3" dy="1" layer="1" rot="R180"/>
+<smd name="P$3" x="-0.975" y="-3" dx="0.3" dy="1" layer="1" rot="R180"/>
+<smd name="P$4" x="-0.325" y="-3" dx="0.3" dy="1" layer="1" rot="R180"/>
+<smd name="P$5" x="0.325" y="-3" dx="0.3" dy="1" layer="1" rot="R180"/>
+<smd name="P$6" x="0.975" y="-3" dx="0.3" dy="1" layer="1" rot="R180"/>
+<smd name="P$7" x="1.625" y="-3" dx="0.3" dy="1" layer="1" rot="R180"/>
+<smd name="P$8" x="2.275" y="-3" dx="0.3" dy="1" layer="1" rot="R180"/>
+<smd name="P$9" x="2.275" y="3" dx="0.3" dy="1" layer="1" rot="R180"/>
+<smd name="P$10" x="1.625" y="3" dx="0.3" dy="1" layer="1" rot="R180"/>
+<smd name="P$11" x="0.975" y="3" dx="0.3" dy="1" layer="1" rot="R180"/>
+<smd name="P$12" x="0.325" y="3" dx="0.3" dy="1" layer="1" rot="R180"/>
+<smd name="P$13" x="-0.325" y="3" dx="0.3" dy="1" layer="1" rot="R180"/>
+<smd name="P$14" x="-0.975" y="3" dx="0.3" dy="1" layer="1" rot="R180"/>
+<smd name="P$15" x="-1.625" y="3" dx="0.3" dy="1" layer="1" rot="R180"/>
+<smd name="P$16" x="-2.275" y="3" dx="0.3" dy="1" layer="1" rot="R180"/>
 <wire x1="-2.5" y1="2.2" x2="-2.5" y2="-2.2" width="0.127" layer="21"/>
 <wire x1="2.5" y1="2.2" x2="2.5" y2="-2.2" width="0.127" layer="21"/>
-<wire x1="-2.5" y1="-2.2" x2="2.5" y2="-2.2" width="0.127" layer="21"/>
 <wire x1="-2.5" y1="2.2" x2="2.5" y2="2.2" width="0.127" layer="21"/>
-<circle x="-3.4" y="-2.4" radius="0.282840625" width="0.127" layer="21"/>
-<text x="-2.9" y="-1.7" size="0.6096" layer="21" font="vector" rot="R90">&gt;NAME</text>
+<wire x1="-2.5" y1="-2.2" x2="2.5" y2="-2.2" width="0.127" layer="21"/>
+<text x="-2.9" y="-1.9" size="0.6096" layer="21" font="vector" rot="R90">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
 <symbol name="AK4430">
-<pin name="CN" x="-15.24" y="5.08" length="middle"/>
-<pin name="CP" x="-15.24" y="2.54" length="middle"/>
-<pin name="SMUTE" x="-15.24" y="0" length="middle"/>
-<pin name="MCLK" x="-15.24" y="-2.54" length="middle"/>
-<pin name="BICK" x="-15.24" y="-5.08" length="middle"/>
-<pin name="SDTI" x="-15.24" y="-7.62" length="middle"/>
-<pin name="LRCK" x="-15.24" y="-10.16" length="middle"/>
-<pin name="DIF" x="-15.24" y="-12.7" length="middle"/>
-<pin name="AOUTR" x="17.78" y="-12.7" length="middle" rot="R180"/>
-<pin name="AOUTL" x="17.78" y="-10.16" length="middle" rot="R180"/>
-<pin name="VDD" x="17.78" y="-7.62" length="middle" rot="R180"/>
-<pin name="VSS1" x="17.78" y="-5.08" length="middle" rot="R180"/>
-<pin name="VREFH" x="17.78" y="-2.54" length="middle" rot="R180"/>
-<pin name="CVDD" x="17.78" y="0" length="middle" rot="R180"/>
-<pin name="VSS2" x="17.78" y="2.54" length="middle" rot="R180"/>
-<pin name="VEE" x="17.78" y="5.08" length="middle" rot="R180"/>
-<wire x1="-10.16" y1="7.62" x2="12.7" y2="7.62" width="0.254" layer="94"/>
-<wire x1="12.7" y1="7.62" x2="12.7" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-15.24" x2="-10.16" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-15.24" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
-<text x="-10.16" y="10.16" size="1.778" layer="94" font="vector">&gt;NAME</text>
+<pin name="CN" x="25.4" y="-43.18" length="middle" rot="R180"/>
+<pin name="CP" x="25.4" y="-30.48" length="middle" rot="R180"/>
+<pin name="SMUTE" x="-17.78" y="-17.78" length="middle"/>
+<pin name="MCLK" x="-17.78" y="-10.16" length="middle"/>
+<pin name="BICK" x="-17.78" y="-30.48" length="middle"/>
+<pin name="SDTI" x="-17.78" y="-33.02" length="middle"/>
+<pin name="LRCK" x="-17.78" y="-27.94" length="middle"/>
+<pin name="DIF" x="-17.78" y="-15.24" length="middle"/>
+<pin name="AOUTR" x="25.4" y="-22.86" length="middle" rot="R180"/>
+<pin name="AOUTL" x="25.4" y="-17.78" length="middle" rot="R180"/>
+<pin name="VDD" x="25.4" y="2.54" length="middle" rot="R180"/>
+<pin name="VSS1" x="25.4" y="-12.7" length="middle" rot="R180"/>
+<pin name="VREFH" x="25.4" y="0" length="middle" rot="R180"/>
+<pin name="CVDD" x="25.4" y="-50.8" length="middle" rot="R180"/>
+<pin name="VSS2" x="25.4" y="-60.96" length="middle" rot="R180"/>
+<pin name="VEE" x="25.4" y="-48.26" length="middle" rot="R180"/>
+<wire x1="-12.7" y1="5.08" x2="20.32" y2="5.08" width="0.254" layer="94"/>
+<wire x1="20.32" y1="5.08" x2="20.32" y2="-63.5" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-63.5" x2="-12.7" y2="-63.5" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-63.5" x2="-12.7" y2="5.08" width="0.254" layer="94"/>
+<text x="-10.16" y="7.62" size="0.6096" layer="95" font="vector">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="AK4430">
+<deviceset name="AK4430ET">
 <gates>
-<gate name="G$1" symbol="AK4430" x="-2.54" y="2.54"/>
+<gate name="G$1" symbol="AK4430" x="5.08" y="0"/>
 </gates>
 <devices>
 <device name="" package="16TSSOP">
